@@ -4,6 +4,24 @@
 
 pageextension 50120 ItemListExt extends "Item List"
 {
+    actions
+    {
+        addlast("Item")
+        {
+            action("ShowAMessage")
+            {
+                Caption = 'Eine Nachricht ausgeben';
+                Image = Holiday;
+                trigger OnAction();
+                begin
+                    Message('Hi Leute')
+                end;
+
+            }
+        }      
+
+
+    }
     trigger OnOpenPage();
     var
     i : Integer;
@@ -11,6 +29,9 @@ pageextension 50120 ItemListExt extends "Item List"
         i := 5 + 7;
         
         Message('App published: Hello world!!!' + Format(i));
-        Message('25088');
+        Message('250889');
     end;
+
+    
+
 }
