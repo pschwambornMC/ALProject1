@@ -11,6 +11,6 @@ pageextension 50120 ItemListExt extends "Item List"
         i := 5 + 7;
         
         Message('App published: Hello world!!!' + Format(i));
-        Message('25088');
+        Message('25085');
     end;
 }
